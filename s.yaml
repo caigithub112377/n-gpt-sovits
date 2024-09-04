@@ -3,10 +3,10 @@ name: hello-world-app
 # access 是当前应用所需要的密钥信息配置：
 # 密钥配置可以参考：https://manual.serverless-devs.com/user-guide/builtin/config/
 # 密钥使用顺序可以参考：https://manual.serverless-devs.com/dev-guide/cli_design/#_11
-access: '{{ access }}'
+access: 'undefined'
 vars:
-  region: '{{ region }}'
-  functionName: '{{ functionName }}'
+  region: 'cn-hangzhou'
+  functionName: 'gpt-sovits-596d99'
   download_path: '/mnt/${vars.functionName}'
 template:
   SoVITS-Template:
